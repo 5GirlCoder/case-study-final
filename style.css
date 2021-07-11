@@ -1,0 +1,56 @@
+body
+{
+    background-color: rgb(207, 207, 183);   
+    color: rgb(77, 77, 36);
+}
+
+.Header-DIV
+{
+    background-color: rgb(190, 190, 126);
+    font-family: 'Akaya Kanadaka', cursive;
+    border-radius: 10px;
+    width: 600px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.Test-DIV
+{
+    font-family: 'Akaya Telivigala', cursive;
+    height: 530px;
+    width: 300px;
+    border-radius: 10px;
+    background-color: rgb(234, 234, 209);
+    box-shadow: 5px 5px 18px rgb(41, 41, 21);
+}
+
+.Test-Image
+{
+    border-radius: 10px; 
+    width: 150px;
+    height: 300px;
+}
+
+.Result-DIV
+{
+    background-color: rgb(190, 190, 126);
+    font-family: 'Akaya Kanadaka', cursive;
+    border-radius: 10px;
+    width: 800px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.Test-Section
+{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+.glyphicon-paperclip
+{
+    margin-bottom: -15px;
+}
+
+/*Colour Scheme - rgb(190, 190, 126) & rgb(244, 244, 212) & rgb(234, 234, 209) & rgb(207, 207, 183) & rgb(77, 77, 36) */

@@ -1,0 +1,108 @@
+<html>
+    <head>
+        <title>Model Comparison</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+        <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body class="container"> 
+    <center>
+    <br>
+
+    <div class="col-xl-12 Header-DIV">
+        <h1>Model Comparison</h1>
+    </div> 
+    <br>
+    
+    <div class="Test-Section">
+    <div class="Test-DIV container">
+        <h3>Test Image 1 - Book</h3>
+        <br>
+        <span style="font-size: 25px;" class="glyphicon glyphicon-paperclip"></span>
+        <br>
+        <img style="width: 200px;" id="BookIMG" class="Test-Image" src="Book.jpg">
+        <br>
+        <h4>Output on  Wolfram  <h4 id="Test-Image1-Azure">-first aid kit</h4> </h4>
+        <h4>Output on Mobilenet <h4 id="Test-Image1-Mobilenet">-packet</h4></h4>
+    </div>
+
+    <div class="Test-DIV container">
+        <h3>Test Image 2 - Water Bottle</h3>
+        <br>
+        <span style="font-size: 25px;" class="glyphicon glyphicon-paperclip"></span>
+        <br>
+        <img id="BottleIMG" class="Test-Image" src="Bottle.jpg">
+        <br>
+        <h4>Output on  Wolfram  <h4 id="Test-Image2-Azure">-vial</h4> </h4>
+        <h4>Output on Mobilenet <h4 id="Test-Image2-Mobilenet">-water bottle</h4></h4>
+    </div>
+    </div>
+    
+    <div class="Test-Section">
+    <div class="Test-DIV container">
+        <h3>Test Image 3 - Phone</h3>
+        <br>
+        <span style="font-size: 25px;" class="glyphicon glyphicon-paperclip"></span>
+        <br>
+        <img id="PhoneIMG" class="Test-Image" src="Phone.jpg">
+        <br>
+        <h4>Output on  Wolfram  <h4 id="Test-Image3-Azure">-switch</h4> </h4>
+        <h4>Output on Mobilenet <h4 id="Test-Image3-Mobilenet">-smart phone</h4></h4>
+    </div>
+    
+    <div class="Test-DIV container">
+        <h3>Test Image 4 - Teddy Bear</h3>
+        <br>
+        <span style="font-size: 25px;" class="glyphicon glyphicon-paperclip"></span>
+        <br>
+        <img style="width: 165px;" id="TeddyIMG" class="Test-Image" src="Teddy.jpg">
+        <br>
+        <h4>Output on  Wolfram  <h4 id="Test-Image4-Azure">-plush toy</h4> </h4>
+        <h4>Output on Mobilenet <h4 id="Test-Image4-Mobilenet">-teddy bear</h4></h4>
+    </div>
+    </div>
+     
+    <div class="Test-Section">
+    <div class="Test-DIV container">
+        <h3>Test Image 5 - Pen</h3> 
+        <br>
+        <span style="font-size: 25px;" class="glyphicon glyphicon-paperclip"></span>
+        <br>
+        <img class="Test-Image" id="PenIMG" src="Pen.jpg">
+        <br>
+        <h4>Output on  Wolfram  <h4 id="Test-Image5-Azure">-fastener</h4> </h4>
+        <h4>Output on Mobilenet <h4 id="Test-Image5-Mobilenet">-ballpen</h4></h4>
+    </div>
+
+    <div class="Test-DIV container">
+        <h3>Test Image 6 - Remote</h3> 
+        <br>
+        <span style="font-size: 25px;" class="glyphicon glyphicon-paperclip"></span>
+        <br>
+        <img class="Test-Image" id="RemoteIMG" src="Remote.jpg">
+        <br>
+        <h4>Output on  Wolfram  <h4 id="Test-Image5-Azure">-remote control</h4> </h4>
+        <h4>Output on Mobilenet <h4 id="Test-Image5-Mobilenet">-remote control</h4></h4>
+    </div>
+    </div>
+    
+    <div class="col-xl-12 Result-DIV container">
+        <h1>Result</h1>
+        <h3>6 models have been tested.Wolfram has got 4 wrong & Mobilenet has got 1 wrong.
+            Hence, it is proved that Mobilenet is more accurate than Wolffarm.</h3>
+    </div>
+    <br><br><br>
+    </center>
+    </div>
+    </body>
+</html>
